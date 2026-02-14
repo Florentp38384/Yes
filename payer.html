@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payer mon solde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="modal">
+    <div class="modal-header">
+        <h2>Payer mon solde</h2>
+        <span class="close">×</span>
+    </div>
+
+    <div class="balance-box">
+        <p>Solde à payer</p>
+        <h1 class="price">104 000 €</h1>
+    </div>
+
+    <div class="form">
+
+        <label>Montant du paiement : <span class="required">*</span></label>
+        <input type="number" id="montant" value="104000">
+
+        <div class="line">
+            <span>Frais de commodité :</span>
+            <span id="frais">0 €</span>
+        </div>
+
+        <div class="line total">
+            <span>Montant facturé sur la carte :</span>
+            <span id="total">104000 €</span>
+        </div>
+
+        <div class="cards">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Mastercard-logo.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg">
+        </div>
+
+        <label>Nom sur la carte : <span class="required">*</span></label>
+        <input type="text">
+
+        <label>Numéro de carte de crédit : <span class="required">*</span></label>
+        <input type="text">
+
+        <div class="row">
+            <div>
+                <label>Expiration : <span class="required">*</span></label>
+                <input type="text" placeholder="MM">
+            </div>
+            <div>
+                <label> </label>
+                <input type="text" placeholder="AA">
+            </div>
+            <div>
+                <label>CVV/CVC : <span class="required">*</span></label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn grey" onclick="window.location='index.html'">Déconnexion</button>
+            <button class="btn grey">Retour</button>
+            <button class="btn blue">Payer</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="payer.js"></script>
